@@ -1,0 +1,30 @@
+#backVideo {
+    position:fixed;
+    right:0;
+    bottom:0;
+    min-width:100%;
+    min-height:100%;
+    z-index: -1;
+    object-fit:cover;
+}
+
+.welcom-text {
+   font-size : 90px;
+   color:rgb(172, 220, 186);
+   text-align:right;
+   margin: 20vh 0 0 0;
+   position:relative;
+   z-index: 2;
+   text-shadow: 3px 3px 10px rgba(184, 181, 162, 0.8);
+animation: gentleSway 4s ease-in-out infinite alternate;
+
+
+}
+@keyframes gentleSway {
+    0% {
+        transform: rotate(-3deg) translateY(0);
+    }
+    100% {
+        transform: rotate(3deg) translateY(0);
+    }
+}
